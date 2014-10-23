@@ -1,10 +1,12 @@
-= Doko.js
+Doko.js (どこ)
+=======
 
 A tool for finding out which javascript file:line inserted a DOM element. Helpful for situations where you're new to a codebase and you see a UI element and you want to know where it came from.
 
 Only works with javascript/jquery apps.
 
-== Installation
+Installation
+--------
 
 Copy the doko.js file and paste in your `public` directory or one that your web server has access to.
 
