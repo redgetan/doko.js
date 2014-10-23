@@ -1,6 +1,8 @@
 Doko.js (どこ)
 =======
 
+![Screenshot](redditJS_sample.png)
+
 A tool for finding out which javascript file:line inserted a DOM element. Helpful for situations where you're new to a codebase and you see a UI element and you want to know where it came from.
 
 Only works with javascript/jquery apps.
@@ -20,3 +22,7 @@ Also, depending which library you're using, you may need to specify external lib
 
 The reason why you may need to do this is because of the way we track the javascript file:line. We intercept the native DOM insertion methods such as `appendChild`, `insertBefore`, or `replaceChild`, look at the stacktrace, and then go through it to find the most recent caller which corresponds to our javascript code.
 
+Usage
+-----
+
+Simply use the chrome/firefox inspector to inspect the DOM element and under the Elements tab you should see that the element contains a `data-orig-file-line` showing the javascript code file:line.
