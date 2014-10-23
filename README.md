@@ -20,9 +20,15 @@ Dojo.js needs to run before any other scripts, so place it on the very top befor
 
     <script src="doko.js"></script>
 
+Optional
+-------
+
 Also, depending which library you're using, you may need to specify external libraries you wish to prevent from showing up as a potential source location. This is because of the way we track the origin of client-side DOM insertion. In order to do that, put a `data-orig-exclude-list` attribute in the `<head>` tag, and list a comma separated names of libraries you want to exclude.
 
     <head data-orig-exclude-list="jquery,backbone">
+
+How it works
+--------
 
 The reason why you may need to do this is because of the way we track the javascript file:line. We intercept the native DOM insertion methods such as `appendChild`, `insertBefore`, or `replaceChild`, look at the stacktrace, and then go through it to find the most recent caller which corresponds to our javascript code.
 
