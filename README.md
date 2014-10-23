@@ -1,11 +1,12 @@
 Doko.js (どこ)
 =======
 
-![Screenshot](redditJS_sample.png)
-
 A tool for finding out which javascript file:line inserted a DOM element. Helpful for situations where you're new to a codebase and you see a UI element and you want to know where it came from.
 
 Only works with javascript/jquery apps.
+
+![Screenshot](redditJS_sample.png)
+
 
 Installation
 --------
