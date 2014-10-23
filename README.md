@@ -5,6 +5,9 @@ A tool for finding out which javascript file:line inserted a DOM element. Helpfu
 
 Only works with javascript/jquery apps.
 
+Screenshot
+------
+
 ![Screenshot](redditJS_sample.png)
 
 
